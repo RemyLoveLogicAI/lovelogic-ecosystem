@@ -1,0 +1,16 @@
+{
+  "name": "@lovelogic/voiceops",
+  "version": "0.1.0",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "build": "tsc",
+    "dev": "tsc -w"
+  },
+  "dependencies": {
+    "chalk": "^4.1.2"
+  },
+  "devDependencies": {
+    "typescript": "^5.3.3"
+  }
+}

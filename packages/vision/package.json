@@ -1,0 +1,20 @@
+{
+  "name": "@lovelogic/vision",
+  "version": "0.1.0",
+  "description": "VLM Integration for LoveLogic",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "build": "tsc",
+    "dev": "tsc --watch",
+    "clean": "rm -rf dist *.tsbuildinfo"
+  },
+  "dependencies": {
+    "fs-extra": "^11.2.0"
+  },
+  "devDependencies": {
+    "@types/fs-extra": "^11.0.4",
+    "@types/node": "^20.10.6",
+    "typescript": "^5.3.3"
+  }
+}

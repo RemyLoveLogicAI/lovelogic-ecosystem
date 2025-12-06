@@ -1,0 +1,38 @@
+{
+  "name": "@lovelogic/devmesh",
+  "version": "0.1.0",
+  "description": "DevMesh - Unified CLI for orchestrating AI development platforms",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "bin": {
+    "ll": "./dist/index.js",
+    "lovelogic": "./dist/index.js"
+  },
+  "scripts": {
+    "dev": "tsx src/index.ts",
+    "build": "tsc && chmod +x dist/index.js",
+    "typecheck": "tsc --noEmit",
+    "clean": "rm -rf dist *.tsbuildinfo"
+  },
+  "dependencies": {
+    "@lovelogic/api": "workspace:*",
+    "@lovelogic/browser": "workspace:*",
+    "@lovelogic/vision": "workspace:*",
+    "@lovelogic/agent": "workspace:*",
+    "axios": "^1.6.5",
+    "chalk": "^4.1.2",
+    "commander": "^11.1.0",
+    "conf": "^10.2.0",
+    "minimatch": "^10.1.1",
+    "ora": "^9.0.0"
+  },
+  "devDependencies": {
+    "@types/minimatch": "^6.0.0",
+    "@types/node": "^20.10.6",
+    "tsx": "^4.7.0",
+    "typescript": "^5.3.3"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  }
+}
