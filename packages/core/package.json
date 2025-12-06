@@ -1,6 +1,7 @@
 {
-  "name": "@lovelogic/agent",
+  "name": "@nexus/core",
   "version": "0.1.0",
+  "description": "Nexus AI - Core autonomous agent engine",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "scripts": {
@@ -8,9 +9,9 @@
     "dev": "tsc -w"
   },
   "dependencies": {
-    "@lovelogic/browser": "workspace:*",
-    "@lovelogic/vision": "workspace:*",
-    "@lovelogic/voiceops": "workspace:*",
+    "@nexus/browser": "workspace:*",
+    "@nexus/vision": "workspace:*",
+    "@nexus/voice": "workspace:*",
     "chalk": "^4.1.2"
   },
   "devDependencies": {

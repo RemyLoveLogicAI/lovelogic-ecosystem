@@ -1,7 +1,7 @@
 {
-  "name": "@lovelogic/api",
+  "name": "@nexus/api",
   "version": "0.1.0",
-  "description": "LogicStarter API - Core AI agent backend for LoveLogic",
+  "description": "Nexus API - Core AI backend service",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "scripts": {

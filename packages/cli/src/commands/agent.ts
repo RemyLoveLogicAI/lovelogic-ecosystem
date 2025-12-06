@@ -1,8 +1,8 @@
 import { Command } from 'commander';
 import chalk from 'chalk';
-import { NavigatorAgent } from '@lovelogic/agent';
-import { BrowserController } from '@lovelogic/browser';
-import { VisionClient } from '@lovelogic/vision';
+import { NavigatorAgent } from '@nexus/core';
+import { BrowserController } from '@nexus/browser';
+import { VisionClient } from '@nexus/vision';
 
 export function agentCommand(program: Command) {
   const agent = program.command('agent')

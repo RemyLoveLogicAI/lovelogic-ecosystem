@@ -1,99 +1,63 @@
-# LoveLogic AI Ecosystem
+# Nexus AI
 
-**Human-first AI technology that combines emotional intelligence ("Love") with computational intelligence ("Logic").**
+**Autonomous AI agent ecosystem with browser automation, vision, and voice capabilities.**
 
 ## Overview
 
-The LoveLogic ecosystem consists of three core components:
+Nexus AI is a modular system for building autonomous AI agents that can:
 
-1. **LogicStarter** - Core AI agent engine for reasoning, task execution, and automation
-2. **DevMesh** - Unified CLI for orchestrating AI development platforms
-3. **VoiceOps** - Voice-driven development and agent control layer
+1. **@nexus/core** - Autonomous agent engine with goal-driven planning
+2. **@nexus/cli** - Unified command-line interface (`nx` or `nexus`)
+3. **@nexus/browser** - Browser automation with Puppeteer
+4. **@nexus/vision** - Vision/VLM integration for screen analysis
+5. **@nexus/voice** - Voice-driven development
+6. **@nexus/api** - Backend API service
 
 ## Project Structure
 
 ```
-lovelogic-ecosystem/
+nexus-ai/
 ├── packages/
-│   ├── api/          # LogicStarter API backend (api.lovelogic.cloud)
-│   ├── devmesh/      # DevMesh CLI tool
-│   └── voiceops/     # VoiceOps architecture and design
+│   ├── api/          # Backend API service
+│   ├── browser/      # Browser automation
+│   ├── cli/          # Command-line interface
+│   ├── core/         # Agent engine
+│   ├── vision/       # VLM integration
+│   └── voice/        # Voice-driven development
 ├── package.json
 └── pnpm-workspace.yaml
 ```
 
 ## Quick Start
 
-### Prerequisites
-
-- Node.js >= 18.0.0
-- pnpm >= 8.0.0
-
-### Installation
-
 ```bash
-# Install pnpm if you don't have it
-npm install -g pnpm
-
-# Install all dependencies
+# Install dependencies
 pnpm install
 
 # Build all packages
 pnpm build
+
+# Run CLI
+pnpm dev:cli
+
+# Run API
+pnpm dev:api
 ```
 
-### Development
+## CLI Commands
 
 ```bash
-# Run API in development mode
-pnpm dev:api
-
-# Run CLI in development mode
-pnpm dev:cli
+# Using the CLI (after build + link)
+nx agent run "search for weather in SF"
+nx browser open https://example.com
+nx browser screenshot
+nx browser analyze
 ```
-
-## Packages
-
-### [@lovelogic/api](./packages/api)
-
-LogicStarter API backend - a minimal but extensible HTTP API that will eventually power the LogicStarter agent system.
-
-**Production URL:** `https://api.lovelogic.cloud` (pending DNS configuration)
-
-### [@lovelogic/devmesh](./packages/devmesh)
-
-DevMesh CLI - a unified developer interface for orchestrating AI platforms like Genspark, Replit, and Manus.
-
-**CLI Command:** `ll` or `lovelogic`
-
-### [@lovelogic/voiceops](./packages/voiceops)
-
-VoiceOps - voice-driven development architecture integrating STT → intent parsing → DevMesh execution → TTS.
-
-## Domains
-
-The LoveLogic ecosystem uses the following domains:
-
-- **lovelogic.cloud** - Backend infrastructure and API services
-  - `api.lovelogic.cloud` - LogicStarter API
-  - `agents.lovelogic.cloud` - Agent management (future)
-  - `status.lovelogic.cloud` - Health/status pages (future)
-
-- **lovelogic.me** - Personal/founder identity space
-  - `ceo.lovelogic.me` - Founder profile (future)
-  - `id.lovelogic.me` - Personal AI twin (future)
-
-## Development Workflow
-
-1. Make changes to packages
-2. Run `pnpm build` to compile TypeScript
-3. Test locally before deploying
-4. See individual package READMEs for specific instructions
 
 ## License
 
-UNLICENSED - Proprietary software for LoveLogic AI
+UNLICENSED - Proprietary
 
 ---
 
-**Built with ❤️ + 🧠 by LoveLogic AI**
+**Built with 🤖 Nexus AI**

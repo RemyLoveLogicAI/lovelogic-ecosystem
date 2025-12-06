@@ -1,23 +1,23 @@
 {
-  "name": "lovelogic-ecosystem",
+  "name": "nexus-ai",
   "version": "0.1.0",
   "private": true,
-  "description": "LoveLogic AI - Human-first AI technology ecosystem",
+  "description": "Nexus AI - Autonomous AI agent ecosystem",
   "scripts": {
     "build": "pnpm -r build",
-    "dev:api": "pnpm --filter @lovelogic/api dev",
-    "dev:cli": "pnpm --filter @lovelogic/devmesh dev",
+    "dev:api": "pnpm --filter @nexus/api dev",
+    "dev:cli": "pnpm --filter @nexus/cli dev",
     "clean": "pnpm -r clean && rm -rf node_modules",
     "typecheck": "pnpm -r typecheck"
   },
   "keywords": [
-    "lovelogic",
+    "nexus",
     "ai",
     "agents",
-    "devmesh",
-    "voiceops"
+    "automation",
+    "browser"
   ],
-  "author": "LoveLogic AI",
+  "author": "Nexus AI",
   "license": "UNLICENSED",
   "engines": {
     "node": ">=18.0.0",

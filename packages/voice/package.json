@@ -1,6 +1,7 @@
 {
-  "name": "@lovelogic/voiceops",
+  "name": "@nexus/voice",
   "version": "0.1.0",
+  "description": "Nexus Voice - Voice-driven AI development",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "scripts": {

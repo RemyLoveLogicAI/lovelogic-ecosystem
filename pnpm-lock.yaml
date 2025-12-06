@@ -15,25 +15,6 @@ importers:
         specifier: 4.1.2
         version: 4.1.2
 
-  packages/agent:
-    dependencies:
-      '@lovelogic/browser':
-        specifier: workspace:*
-        version: link:../browser
-      '@lovelogic/vision':
-        specifier: workspace:*
-        version: link:../vision
-      '@lovelogic/voiceops':
-        specifier: workspace:*
-        version: link:../voiceops
-      chalk:
-        specifier: ^4.1.2
-        version: 4.1.2
-    devDependencies:
-      typescript:
-        specifier: ^5.3.3
-        version: 5.9.3
-
   packages/api:
     dependencies:
       dotenv:
@@ -72,18 +53,18 @@ importers:
         specifier: ^5.0.0
         version: 5.9.3
 
-  packages/devmesh:
+  packages/cli:
     dependencies:
-      '@lovelogic/agent':
-        specifier: workspace:*
-        version: link:../agent
-      '@lovelogic/api':
+      '@nexus/api':
         specifier: workspace:*
         version: link:../api
-      '@lovelogic/browser':
+      '@nexus/browser':
         specifier: workspace:*
         version: link:../browser
-      '@lovelogic/vision':
+      '@nexus/core':
+        specifier: workspace:*
+        version: link:../core
+      '@nexus/vision':
         specifier: workspace:*
         version: link:../vision
       axios:
@@ -118,6 +99,25 @@ importers:
         specifier: ^5.3.3
         version: 5.9.3
 
+  packages/core:
+    dependencies:
+      '@nexus/browser':
+        specifier: workspace:*
+        version: link:../browser
+      '@nexus/vision':
+        specifier: workspace:*
+        version: link:../vision
+      '@nexus/voice':
+        specifier: workspace:*
+        version: link:../voice
+      chalk:
+        specifier: ^4.1.2
+        version: 4.1.2
+    devDependencies:
+      typescript:
+        specifier: ^5.3.3
+        version: 5.9.3
+
   packages/vision:
     dependencies:
       fs-extra:
@@ -134,7 +134,7 @@ importers:
         specifier: ^5.3.3
         version: 5.9.3
 
-  packages/voiceops:
+  packages/voice:
     dependencies:
       chalk:
         specifier: ^4.1.2

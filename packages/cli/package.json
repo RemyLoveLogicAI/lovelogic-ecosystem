@@ -1,12 +1,12 @@
 {
-  "name": "@lovelogic/devmesh",
+  "name": "@nexus/cli",
   "version": "0.1.0",
-  "description": "DevMesh - Unified CLI for orchestrating AI development platforms",
+  "description": "Nexus CLI - Unified command-line for AI orchestration",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "bin": {
-    "ll": "./dist/index.js",
-    "lovelogic": "./dist/index.js"
+    "nx": "./dist/index.js",
+    "nexus": "./dist/index.js"
   },
   "scripts": {
     "dev": "tsx src/index.ts",
@@ -15,10 +15,10 @@
     "clean": "rm -rf dist *.tsbuildinfo"
   },
   "dependencies": {
-    "@lovelogic/api": "workspace:*",
-    "@lovelogic/browser": "workspace:*",
-    "@lovelogic/vision": "workspace:*",
-    "@lovelogic/agent": "workspace:*",
+    "@nexus/api": "workspace:*",
+    "@nexus/browser": "workspace:*",
+    "@nexus/vision": "workspace:*",
+    "@nexus/core": "workspace:*",
     "axios": "^1.6.5",
     "chalk": "^4.1.2",
     "commander": "^11.1.0",

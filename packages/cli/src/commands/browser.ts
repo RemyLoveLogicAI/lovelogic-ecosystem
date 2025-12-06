@@ -1,6 +1,6 @@
 import { Command } from 'commander';
-import { BrowserController } from '@lovelogic/browser';
-import { VisionClient } from '@lovelogic/vision';
+import { BrowserController } from '@nexus/browser';
+import { VisionClient } from '@nexus/vision';
 import chalk from 'chalk';
 
 export const browserCommand = (program: Command) => {

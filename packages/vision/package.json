@@ -1,7 +1,7 @@
 {
-  "name": "@lovelogic/vision",
+  "name": "@nexus/vision",
   "version": "0.1.0",
-  "description": "VLM Integration for LoveLogic",
+  "description": "Nexus Vision - VLM integration for AI agents",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "scripts": {

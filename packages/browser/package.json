@@ -1,6 +1,7 @@
 {
-  "name": "@lovelogic/browser",
+  "name": "@nexus/browser",
   "version": "0.1.0",
+  "description": "Nexus Browser - Browser automation with Puppeteer",
   "main": "src/index.ts",
   "scripts": {
     "build": "tsc",

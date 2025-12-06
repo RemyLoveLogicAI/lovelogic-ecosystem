@@ -1,5 +1,5 @@
-import { BrowserController } from '@lovelogic/browser';
-import { VisionClient } from '@lovelogic/vision';
+import { BrowserController } from '@nexus/browser';
+import { VisionClient } from '@nexus/vision';
 import { Planner, SimplePlanner, PlanResult } from './planner';
 import chalk from 'chalk';
 
